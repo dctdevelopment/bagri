@@ -12,6 +12,8 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
 
+import javax.xml.transform.Source;
+
 import com.bagri.common.query.ExpressionBuilder;
 import com.bagri.common.query.ExpressionContainer;
 import com.bagri.common.query.PathExpression;
@@ -268,6 +270,18 @@ public class DocumentManagementServer extends XDMDocumentManagementServer {
 	protected Set<Long> queryPathKeys(Set<Long> found, PathExpression pex, Object value) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public Source getDocumentSource(long arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void putDocumentSource(long arg0, Source arg1) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
