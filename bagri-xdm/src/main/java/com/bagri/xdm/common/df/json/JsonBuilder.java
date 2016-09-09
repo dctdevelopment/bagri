@@ -23,6 +23,14 @@ public class JsonBuilder implements ContentBuilder {
 	/**
 	 * {@inheritDoc}
 	 */
+	public void init(Map<String, Object> context) {
+		//
+		//logger.trace("init; got context: {}", context);
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public String buildString(Map<DataKey, Elements> elements) throws XDMException {
 		return null;

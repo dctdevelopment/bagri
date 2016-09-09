@@ -4,6 +4,7 @@ import static com.bagri.xquery.api.XQUtils.getAtomicValue;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Stack;
 
 import org.slf4j.Logger;
@@ -39,6 +40,14 @@ public abstract class ContentParserBase {
 	 */
 	protected ContentParserBase(ModelManagement model) {
 		this.model = model;
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	public void init(Map<String, Object> context) {
+		//
+		logger.trace("init; got context: {}", context);
 	}
 	
 	/**
