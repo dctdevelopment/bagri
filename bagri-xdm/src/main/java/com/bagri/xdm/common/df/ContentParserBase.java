@@ -28,9 +28,9 @@ public abstract class ContentParserBase {
 
 	protected final Logger logger = LoggerFactory.getLogger(getClass());
 	
+	protected ModelManagement model;
 	protected List<Data> dataList;
 	protected Stack<Data> dataStack;
-	protected ModelManagement model;
 	protected int docType = -1;
 	protected int elementId;
 	
@@ -68,6 +68,7 @@ public abstract class ContentParserBase {
 		xElt.setParentId(parent.getElementId());
 		String path = parent.getPath() + name;
 		Path xPath = model.translatePath(docType, path, kind, dataType, occurence);
+		xPath.setParentId(parent.getPathId());
 		xElt.setValue(getAtomicValue(xPath.getDataType(), value));
 		Data xData = new Data(xPath, xElt);
 		dataList.add(xData);
