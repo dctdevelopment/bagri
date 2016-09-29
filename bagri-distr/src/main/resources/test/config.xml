@@ -539,7 +539,7 @@
                 <entry name="xdm.schema.thread.pool">10</entry>
                 <entry name="xdm.schema.query.cache">true</entry>
                 <entry name="xdm.schema.ports.first">10150</entry>
-                <entry name="xdm.schema.format.default">XML</entry>
+                <entry name="xdm.schema.format.default">JSON</entry>
                 <entry name="xdm.schema.ports.last">10160</entry>
                 <entry name="xdm.schema.population.size">1</entry>
                 <entry name="xdm.schema.population.buffer.size">1000000</entry>
